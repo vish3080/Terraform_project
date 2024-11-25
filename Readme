@@ -1,0 +1,10 @@
+Terraform Project - AWS Infrastructure and Web Server Setup
+This Terraform project creates an AWS infrastructure that includes a VPC, subnets, security groups, EC2 instances, S3 bucket, and an Application Load Balancer (ALB) to provision two web servers. The web servers use Apache to serve a simple HTML page that displays the EC2 instance ID.
+
+Project Overview
+AWS VPC: Creates a custom Virtual Private Cloud (VPC) with two subnets in different availability zones.
+Security Groups: Configures a security group for the EC2 instances allowing HTTP and SSH access.
+EC2 Instances: Provisions two EC2 instances running Apache to serve a basic HTML page.
+S3 Bucket: An S3 bucket is created (though the script to download files from S3 is commented out).
+Load Balancer (ALB): Configures an Application Load Balancer to distribute traffic between the two EC2 instances.
+User Data: Installs Apache on the EC2 instances and serves an HTML page containing the EC2 instance's metadata and a simple animation.
